@@ -184,6 +184,10 @@ NS_ASSUME_NONNULL_END
 #define kiOS7Later (kSystemVersion >= 7)
 #endif
 
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44.0
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+
 #ifndef kiOS8Later
 #define kiOS8Later (kSystemVersion >= 8)
 #endif
